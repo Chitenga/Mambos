@@ -1,0 +1,1731 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 100%;
+  margin: 10px auto;
+}
+
+.slick-slide {
+  margin: 0px 20px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-slide {
+  transition: all ease-in-out 0.3s;
+  opacity: 0.2;
+}
+
+.slick-active {
+  opacity: 0.9;
+}
+
+.slick-current {
+  opacity: 2;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  align-items: center;
+  flex-wrap: wrap;
+  top: 10px;
+}
+header img {
+  width: 80px;
+  margin-left: 5%;
+}
+header .hamburger {
+  padding: 20px 35px 20px 6px;
+  position: relative;
+}
+header .hamburger span {
+  width: 30px;
+  height: 3px;
+  background: #E2251f;
+  border-radius: 20px;
+  position: absolute;
+}
+header .hamburger span:before {
+  height: 100%;
+  width: 100%;
+  background-color: #E2251f;
+  content: "";
+  position: absolute;
+  top: -13px;
+}
+header .hamburger span:after {
+  height: 100%;
+  width: 100%;
+  background-color: #E2251f;
+  content: "";
+  position: absolute;
+  top: 13px;
+}
+header .menu {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: 700ms;
+  z-index: 5;
+}
+header .menu li {
+  list-style-type: none;
+  font-family: regular;
+}
+header .menu li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+  background-color: #e2251f;
+  display: block;
+  border-bottom: 1px solid grey;
+}
+header .menu li a:hover {
+  color: #ffcb1d;
+  text-decoration: none;
+}
+header .active {
+  max-height: 500px;
+}
+
+.banner h1 {
+  font-family: regular;
+  font-size: 35px;
+  text-align: center;
+  line-height: 30px;
+  margin-top: 90%;
+  position: absolute;
+  z-index: 3;
+  display: none;
+}
+.banner #h {
+  font-family: regular;
+  font-size: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-top: 90%;
+  position: absolute;
+  display: block;
+}
+.banner .rect {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.banner .food {
+  width: 90%;
+  position: absolute;
+  top: 200px;
+  left: 15px;
+}
+.banner .btn {
+  background-color: #E2251f;
+  font-family: bold;
+  font-size: 15px;
+  color: white;
+  width: 40%;
+  border-radius: 0;
+  position: absolute;
+  left: 100px;
+  top: 450px;
+}
+.banner .btn:hover {
+  background-color: #eca510;
+}
+.banner .spoon {
+  display: none;
+}
+.banner .aa {
+  display: none;
+}
+
+.about h2 {
+  font-family: bold;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 60px;
+}
+.about .mambo {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  margin-left: 5%;
+  transform: rotate(45deg);
+  display: none;
+}
+.about .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: regular;
+  text-align: center;
+  margin-top: 5%;
+}
+.about .cards .card {
+  border: none;
+  margin-right: 0;
+  box-shadow: 5px 5px 15px;
+  position: relative;
+  top: 150px;
+  left: 0;
+  height: 100%;
+  width: 80%;
+  border-radius: 10px;
+  margin-top: 5%;
+}
+.about .cards p {
+  padding-top: 20px;
+  line-height: 20px;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+.about .cards img {
+  width: 30%;
+  margin-left: 35%;
+  padding-top: 40px;
+}
+.about .cards .car {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+.about .cards .car .c {
+  width: 30%;
+  margin-left: 0;
+}
+.about .cards .car:hover {
+  opacity: 1;
+}
+
+.services {
+  margin-top: 65%;
+}
+.services .tabContainer {
+  width: 100%;
+  outline: none;
+}
+.services .tabContainer .line {
+  position: absolute;
+  top: 1970px;
+  left: 25px;
+  width: 85%;
+}
+.services .tabContainer .buttonContainer {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  margin-left: 5%;
+}
+.services .tabContainer .buttonContainer #d {
+  display: none;
+}
+.services .tabContainer .buttonContainer .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  width: 25%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
+.services .tabContainer .buttonContainer .btn img {
+  width: 75%;
+  margin-left: 5%;
+  outline: none;
+}
+.services .tabContainer .buttonContainer .btn img:hover {
+  width: 76%;
+}
+.services .tabContainer .buttonContainer .btn #v {
+  width: 20%;
+}
+.services .tabContainer .buttonContainer .btn h3 {
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 35%;
+}
+.services .tabContainer .tabPanel {
+  margin-top: 15%;
+  text-align: center;
+  transform: translate(2s);
+  box-sizing: border-box;
+  display: none;
+}
+.services .tabContainer .tabPanel .text {
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-evenly;
+  font-family: regular;
+  font-size: 18px;
+}
+.services .tabContainer .tabPanel .text hr {
+  width: 10%;
+  height: 2px;
+}
+.services .tabContainer .tabPanel .text .c {
+  color: gray;
+}
+
+.m {
+  position: relative;
+  margin-top: 22%;
+}
+.m .men {
+  display: flex !important;
+  background-color: #FE7A15;
+  border-radius: 15px;
+  width: 120% !important;
+  margin-left: 0%;
+}
+.m .men .text {
+  font-family: regular;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+.m .men .text h4 {
+  font-size: 14px;
+  color: white;
+}
+.m .men .text p {
+  font-size: 13px;
+  margin-right: 0px;
+  padding-top: 10px;
+  line-height: 30px;
+}
+.m .men .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m .men .img img {
+  border-radius: 100px;
+  width: 60%;
+  height: 40%;
+}
+.m .men a {
+  color: white;
+  font-size: 13px;
+}
+.m #mm {
+  background-color: #E7272D;
+  height: 25%;
+}
+.m #nn {
+  background: #000000;
+}
+.m #nn img {
+  width: 70%;
+}
+.m #nn p {
+  color: #FE7A15;
+  width: 100%;
+}
+
+.testimony {
+  display: none;
+  background-image: url(../imgs/Taku.png);
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.testimony .tabsContainer {
+  position: absolute;
+  left: 250px;
+  background-color: white;
+  top: 180px;
+  width: 65%;
+  height: 410px;
+}
+.testimony .tabsContainer .buttonsContainer {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.testimony .tabsContainer .buttonsContainer .bt {
+  width: 15%;
+  height: 0%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  background-color: white;
+}
+.testimony .tabsContainer .buttonsContainer .bt img {
+  width: 60%;
+  position: relative;
+  top: -50px;
+}
+.testimony .tabsContainer .buttonsContainer .bt img:hover {
+  width: 65%;
+  background-color: peachpuff;
+  border-radius: 40px;
+  background-color: white;
+}
+.testimony .tabsContainer .tabsPanel {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
+  display: none;
+}
+.testimony .tabsContainer .tabsPanel img {
+  padding-bottom: 10px;
+}
+.testimony .tabsContainer .tabsPanel p {
+  font-family: regular;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 30px;
+  color: gray;
+}
+.testimony .tabsContainer .tabsPanel .tt {
+  position: absolute;
+  left: 670px;
+  margin-top: 3%;
+}
+.testimony .tabsContainer .tabsPanel .tt .panel {
+  margin: 0;
+  margin-left: -30%;
+}
+.testimony .tabsContainer .tabsPanel .tt h4 {
+  font-family: regular;
+  color: #000;
+  font-size: 20px;
+}
+.testimony .tabsContainer .tabsPanel .lines {
+  position: absolute;
+  left: 95px;
+  width: 80%;
+  height: 12px;
+  top: 340px;
+}
+
+.news {
+  position: relative;
+  margin-top: 8%;
+}
+.news .bg {
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+}
+.news .new {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+.news .new .path1 {
+  width: 30%;
+  position: absolute;
+  top: -140px;
+  left: 990px;
+  display: none;
+}
+.news .new h2 {
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  margin-top: 5%;
+  color: black;
+  font-family: bold;
+  width: 100%;
+  font-size: 25px;
+  line-height: 50px;
+}
+.news .slick {
+  position: relative;
+  top: 0px;
+  padding-top: 180px;
+  left: 0px;
+}
+.news .slick .new1 {
+  width: 100%;
+  height: 320px;
+}
+.news .slick h4 {
+  position: absolute;
+  left: 50px;
+  color: white;
+  top: 450px;
+  font-family: regular;
+  font-size: 20px;
+}
+.news .arrow {
+  position: absolute;
+  top: 65%;
+  left: 30px;
+}
+.news .arrow1 {
+  position: absolute;
+  top: 65%;
+  left: 95%;
+}
+
+.footer {
+  height: 80vh;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  position: relative;
+}
+.footer .logo1 {
+  margin-top: 110px;
+  margin-left: 25%;
+  width: 45%;
+}
+.footer .pexels {
+  margin-top: 15%;
+  height: 70vh;
+  display: none;
+}
+.footer .link {
+  margin-top: 30%;
+  text-align: start;
+}
+.footer .link .lin {
+  margin-top: -10%;
+  display: flex;
+  justify-content: space-between;
+  font-family: regular;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+.footer .link .text1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: regular;
+  font-size: 14px;
+  color: white;
+  padding-top: 15px;
+}
+.footer .link .text1 a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+@media (min-width: 375px) {
+  .banner h1 {
+    font-family: bold;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 90%;
+    position: absolute;
+    z-index: 3;
+  }
+  .banner .rect {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .banner .food {
+    width: 90%;
+    position: absolute;
+    top: 200px;
+    left: 15px;
+  }
+  .banner .btn {
+    background-color: #E2251f;
+    font-family: bold;
+    font-size: 18px;
+    color: white;
+    width: 40%;
+    border-radius: 0;
+    position: absolute;
+    left: 120px;
+    top: 520px;
+  }
+
+  .about h2 {
+    font-family: bold;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .about .mambo {
+    width: 90%;
+    position: absolute;
+    top: 900px;
+    margin-left: 5%;
+    transform: rotate(45deg);
+  }
+
+  .services {
+    margin-top: 55%;
+  }
+  .services .tabContainer .line {
+    top: 2100px;
+    width: 82%;
+    left: 30px;
+  }
+  .services .tabContainer .buttonContainer .btn img {
+    margin-left: 30%;
+  }
+  .services .tabContainer .tabPanel {
+    margin-top: 10%;
+  }
+}
+.taste {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    margin-top: 2%;
+  }
+  header .logo {
+    width: 15%;
+  }
+  header .menu {
+    max-height: unset;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: -2%;
+    margin-top: 1%;
+  }
+  header .menu li {
+    font-size: 18px;
+  }
+  header .menu li a {
+    background: transparent;
+    border: none;
+    color: black;
+    padding: 10px;
+  }
+  header .menu li a:hover {
+    color: #E2251f;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+  }
+  header .hamburger {
+    display: none;
+  }
+
+  .banner h1 {
+    position: unset;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: start;
+    margin-top: 65%;
+    display: block;
+  }
+  .banner #h {
+    display: none;
+  }
+  .banner .rect {
+    height: 70vh;
+    width: 410px;
+    right: 15px;
+  }
+  .banner .food {
+    width: 50%;
+    left: 395px;
+  }
+  .banner .btn {
+    font-size: 25px;
+    width: 30%;
+    left: 35px;
+    top: 410px;
+  }
+  .banner .spoon {
+    display: block;
+    position: absolute;
+    top: 485px;
+    left: -75px;
+  }
+
+  .about h2 {
+    font-family: bold;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 420px;
+  }
+  .about .mambo {
+    width: 65%;
+    position: absolute;
+    top: 1070px;
+    margin-left: -8%;
+    transform: rotate(0);
+    display: block;
+  }
+  .about .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: regular;
+    text-align: center;
+    margin-top: 5%;
+  }
+  .about .cards .card {
+    border: none;
+    margin-right: 5%;
+    box-shadow: 5px 5px 15px;
+    position: relative;
+    top: 150px;
+    left: 50px;
+    height: 80%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .about .cards p {
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    padding-bottom: 40px;
+  }
+  .about .cards img {
+    width: 20%;
+    margin-left: 40%;
+    padding-top: 40px;
+  }
+  .about .cards .car {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  .about .cards .car .c {
+    width: 20%;
+    margin-left: 0;
+  }
+  .about .cards .car:hover {
+    opacity: 1;
+  }
+
+  .services {
+    margin-top: 40%;
+  }
+  .services .tabContainer .line {
+    top: 1740px;
+    width: 85%;
+    left: 65px;
+  }
+  .services .tabContainer .buttonContainer #d {
+    display: block;
+  }
+  .services .tabContainer .buttonContainer .btn #v {
+    width: 45%;
+  }
+  .services .tabContainer .buttonContainer .btn img {
+    margin-left: 40%;
+  }
+  .services .tabContainer .buttonContainer .btn h3 {
+    padding-top: 30px;
+    font-size: 20px;
+    font-family: bold;
+  }
+
+  .testimony {
+    display: block;
+    position: relative;
+  }
+  .testimony .pic {
+    display: flex;
+    justify-content: space-between;
+  }
+  .testimony .pic .red {
+    width: 25%;
+    margin-top: -12%;
+  }
+  .testimony .pic .red1 {
+    transform: rotate(80deg);
+    margin-top: 3%;
+  }
+  .testimony h2 {
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+    margin-top: -15%;
+  }
+  .testimony .tabsContainer {
+    position: absolute;
+    left: 150px;
+    background-color: white;
+    top: 200px;
+    width: 65%;
+    height: 410px;
+  }
+  .testimony .tabsContainer .buttonsContainer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt {
+    width: 15%;
+    height: 0%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img {
+    width: 60%;
+    position: relative;
+    top: -50px;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img:hover {
+    width: 65%;
+    background-color: peachpuff;
+    border-radius: 40px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .tabsPanel {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .testimony .tabsContainer .tabsPanel img {
+    padding-bottom: 10px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-family: regular;
+    font-size: 14px;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 25px;
+    color: gray;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    position: absolute;
+    left: 340px;
+    margin-top: 5%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin: 0;
+    margin-left: -30%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt h4 {
+    font-family: regular;
+    color: #000;
+    font-size: 16px;
+  }
+  .testimony .tabsContainer .tabsPanel .lines {
+    position: absolute;
+    left: 60px;
+    width: 80%;
+    height: 12px;
+    top: 340px;
+  }
+
+  .taste {
+    margin-top: -15%;
+    text-align: center;
+    position: relative;
+    display: block;
+  }
+  .taste .tas {
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: -260px;
+    width: 20%;
+  }
+  .taste h2 {
+    font-family: bold;
+    font-size: 28px;
+    padding-bottom: 50px;
+  }
+  .taste img {
+    width: 100%;
+  }
+
+  .news {
+    position: relative;
+    margin-top: 8%;
+  }
+  .news .bg {
+    position: absolute;
+    left: 300px;
+    height: 95vh;
+    width: 61%;
+  }
+  .news .new {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+  }
+  .news .new .path1 {
+    width: 30%;
+    position: absolute;
+    top: -75px;
+    left: 550px;
+    display: block;
+  }
+  .news .new h2 {
+    margin-left: 15%;
+    margin-right: 40%;
+    margin-top: 5%;
+    font-family: bold;
+    width: 100%;
+    font-size: 25px;
+    text-align: start;
+    line-height: 50px;
+  }
+  .news .slick {
+    position: relative;
+    top: 0px;
+    padding-top: 250px;
+  }
+  .news .slick .new1 {
+    width: 100%;
+    height: 320px;
+  }
+  .news .slick h4 {
+    position: absolute;
+    left: 40px;
+    color: white;
+    top: 500px;
+    font-family: regular;
+    font-size: 25px;
+  }
+  .news .arrow {
+    position: absolute;
+    top: 65%;
+    left: 30px;
+  }
+  .news .arrow1 {
+    position: absolute;
+    top: 65%;
+    left: 95%;
+  }
+
+  .footer {
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    position: relative;
+  }
+  .footer .logo1 {
+    margin-top: 230px;
+    width: 100%;
+  }
+  .footer .pexels {
+    margin-top: -20%;
+    height: 45vh;
+    display: block;
+    margin-left: -60%;
+  }
+  .footer .link {
+    margin-top: 40%;
+    text-align: start;
+  }
+  .footer .link .lin {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 40px;
+  }
+  .footer .link .text1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+  }
+  .footer .link .text1 a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+  }
+}
+@media (min-width: 992px) {
+  header {
+    top: 40px;
+  }
+  header .menu {
+    max-height: unset;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style: none;
+    margin-right: 0;
+  }
+  header .menu li {
+    font-size: 26px;
+  }
+  header .menu li a {
+    background: transparent;
+    border: none;
+    color: black;
+  }
+  header .menu li a:hover {
+    color: #E2251f;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+  }
+
+  .banner h1 {
+    font-size: 38px;
+    line-height: 55px;
+    margin-top: 85%;
+    margin-left: -25px;
+  }
+  .banner .rect {
+    height: 70vh;
+    width: 570px;
+    position: relative;
+    right: 50px;
+  }
+  .banner .food {
+    top: 300px;
+    width: 50%;
+    left: 495px;
+  }
+  .banner .btn {
+    font-size: 40px;
+    width: 30%;
+    left: 20px;
+    top: 590px;
+  }
+  .banner .spoon {
+    top: 680px;
+    left: -120px;
+    width: 50%;
+  }
+
+  .about .mambo {
+    top: 1295px;
+    width: 65%;
+  }
+  .about h2 {
+    padding-top: 430px;
+    font-size: 45px;
+  }
+  .about .cards p {
+    font-size: 18px;
+  }
+
+  .services .tabContainer .line {
+    top: 2130px;
+    width: 85%;
+    left: 80px;
+  }
+  .services .tabContainer .buttonContainer #d {
+    display: block;
+  }
+  .services .tabContainer .buttonContainer .btn #v {
+    width: 45%;
+  }
+  .services .tabContainer .buttonContainer .btn img {
+    margin-left: 40%;
+  }
+  .services .tabContainer .buttonContainer .btn h3 {
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .services .tabContainer .tabPanel p {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .m {
+    position: relative;
+    margin-top: 22%;
+  }
+  .m .men {
+    display: flex !important;
+    background-color: #FE7A15;
+    border-radius: 15px;
+    width: 110% !important;
+    margin-left: 0;
+  }
+  .m .men .text {
+    font-family: regular;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .m .men .text h4 {
+    font-size: 20px;
+    color: white;
+  }
+  .m .men .text p {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 25px;
+    line-height: 30px;
+    color: black;
+  }
+  .m .men .text a {
+    font-size: 25px;
+    color: white;
+    margin-left: -5%;
+  }
+  .m .men .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .m .men .img img {
+    border-radius: 100px;
+    width: 100%;
+    height: 70%;
+  }
+  .m #mm {
+    background-color: #E7272D;
+  }
+  .m #nn {
+    background: #000000;
+  }
+  .m #nn img {
+    width: 100%;
+  }
+  .m #nn p {
+    color: #FE7A15;
+  }
+
+  .taste .tas {
+    top: -230px;
+  }
+  .taste h2 {
+    font-size: 35px;
+    padding-bottom: 60px;
+  }
+
+  .testimony {
+    margin-top: 15%;
+  }
+  .testimony h2 {
+    margin-top: -13%;
+  }
+  .testimony .tabsContainer {
+    left: 200px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-size: 20px;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    left: 460px;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin-left: -8%;
+  }
+
+  .taste {
+    margin-top: -35%;
+  }
+  .taste .tas {
+    top: -390px;
+  }
+
+  .news {
+    margin-top: 15%;
+  }
+  .news .bg {
+    left: 410px;
+  }
+  .news .new .path1 {
+    left: 760px;
+    top: -100px;
+  }
+  .news .new h2 {
+    margin-right: 45%;
+    font-size: 30px;
+  }
+
+  .footer {
+    height: 43vh;
+  }
+  .footer .pexels {
+    height: 40vh;
+    margin-left: -35%;
+  }
+  .footer .link .lin {
+    font-size: 30px;
+  }
+  .footer .link .text1 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  header {
+    top: -20px;
+  }
+  header .logo {
+    width: 15%;
+    margin-left: 5%;
+    margin-top: 1%;
+  }
+  header .menu {
+    max-height: unset;
+    display: flex;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    list-style: none;
+    margin-top: 1%;
+    margin-right: 4%;
+  }
+  header .menu li {
+    font-size: 25px;
+  }
+  header .menu li a {
+    background: transparent;
+    border: none;
+    color: black;
+    padding: 20px;
+  }
+  header .menu li a:hover {
+    color: #E2251f;
+    text-decoration: none;
+    border-bottom: 3px solid black;
+  }
+
+  .banner .rect {
+    width: 610px;
+    right: 0px;
+    height: 100vh;
+  }
+  .banner .food {
+    width: 40%;
+    left: 720px;
+    top: 140px;
+  }
+  .banner h1 {
+    margin-top: 45%;
+    margin-left: -50px;
+    font-family: regular;
+    font-size: 45px;
+    line-height: 55px;
+  }
+  .banner .btn {
+    width: 20%;
+    font-size: 35px;
+    font-family: regular;
+    left: 80px;
+    top: 440px;
+  }
+  .banner .spoon {
+    width: 25%;
+    left: -50px;
+    top: 500px;
+  }
+  .banner .aa {
+    position: absolute;
+    left: 950px;
+    top: 560px;
+    display: flex;
+    display: block;
+  }
+  .banner .aa .aaa {
+    margin-left: 40%;
+    position: absolute;
+  }
+  .banner .aa .aaaa {
+    margin-left: -20%;
+  }
+
+  .about .mambo {
+    top: 980px;
+    width: 60%;
+    margin-left: -160px;
+  }
+  .about h2 {
+    padding-top: 400px;
+    font-size: 60px;
+  }
+  .about .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: regular;
+    text-align: center;
+    margin-top: 0%;
+  }
+  .about .cards .card {
+    border: none;
+    margin-right: 5%;
+    box-shadow: 5px 5px 15px;
+    position: relative;
+    top: 70px;
+    left: 50px;
+    height: 200px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .about .cards p {
+    padding-top: 20px;
+    line-height: 20px;
+    font-size: 15px;
+    padding-bottom: 40px;
+  }
+  .about .cards img {
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 40px;
+  }
+  .about .cards .car {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+  }
+  .about .cards .car .c {
+    width: 40%;
+    margin-left: 0;
+  }
+  .about .cards .car:hover {
+    opacity: 1;
+  }
+  .about #cc {
+    margin-top: 12%;
+  }
+
+  .services {
+    margin-top: 15%;
+  }
+  .services .tabContainer {
+    width: 100%;
+    height: 350px;
+    margin-left: 3%;
+  }
+  .services .tabContainer .line {
+    position: absolute;
+    top: 1710px;
+    left: 140px;
+    width: 80%;
+  }
+  .services .tabContainer .buttonContainer {
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 5%;
+  }
+  .services .tabContainer .buttonContainer .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+  }
+  .services .tabContainer .buttonContainer .btn img {
+    width: 35%;
+    margin-left: 5%;
+    outline: none;
+  }
+  .services .tabContainer .buttonContainer .btn #v {
+    width: 20%;
+  }
+  .services .tabContainer .buttonContainer .btn h3 {
+    text-align: center;
+    padding-top: 15px;
+    margin-left: 10%;
+  }
+  .services .tabContainer .tabPanel {
+    margin-top: 10%;
+    height: 85%;
+    text-align: center;
+    padding-top: 105px;
+    transform: translate(2s);
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 25px;
+    display: none;
+  }
+  .services .tabContainer .tabPanel .text {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    justify-content: space-evenly;
+    font-family: regular;
+  }
+  .services .tabContainer .tabPanel .text p {
+    line-height: 50px;
+  }
+  .services .tabContainer .tabPanel .text hr {
+    width: 20%;
+    height: 2px;
+  }
+
+  .m {
+    position: relative;
+    margin-top: 22%;
+  }
+  .m .men {
+    display: flex !important;
+    background-color: #FE7A15;
+    border-radius: 15px;
+    width: 100% !important;
+    margin-left: 0;
+  }
+  .m .men .text {
+    font-family: regular;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .m .men .text h4 {
+    font-size: 20px;
+    color: white;
+  }
+  .m .men .text p {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 25px;
+    line-height: 30px;
+    color: black;
+  }
+  .m .men .text a {
+    font-size: 25px;
+    color: white;
+    margin-left: -5%;
+  }
+  .m .men .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .m .men .img img {
+    border-radius: 100px;
+    width: 100%;
+    height: 70%;
+  }
+  .m #mm {
+    background-color: #E7272D;
+  }
+  .m #nn {
+    background: #000000;
+  }
+  .m #nn img {
+    width: 100%;
+  }
+  .m #nn p {
+    color: #FE7A15;
+  }
+
+  .testimony {
+    margin-top: 10%;
+    position: relative;
+  }
+  .testimony .pic {
+    display: flex;
+    justify-content: space-between;
+  }
+  .testimony .pic .red {
+    width: 25%;
+    margin-top: -15%;
+  }
+  .testimony .pic .red1 {
+    transform: rotate(80deg);
+  }
+  .testimony h2 {
+    left: 480px;
+    font-family: bold;
+    font-size: 30px;
+    position: absolute;
+    top: 300px;
+  }
+  .testimony .tabsContainer {
+    position: absolute;
+    left: 250px;
+    background-color: white;
+    top: 200px;
+    width: 65%;
+    height: 410px;
+  }
+  .testimony .tabsContainer .buttonsContainer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt {
+    width: 15%;
+    height: 0%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img {
+    width: 60%;
+    position: relative;
+    top: -50px;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img:hover {
+    width: 65%;
+    background-color: peachpuff;
+    border-radius: 40px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .tabsPanel {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .testimony .tabsContainer .tabsPanel img {
+    padding-bottom: 10px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-family: regular;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 30px;
+    color: gray;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    position: absolute;
+    left: 670px;
+    margin-top: 3%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin: 0;
+    margin-left: -30%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt h4 {
+    font-family: regular;
+    color: #000;
+    font-size: 20px;
+  }
+  .testimony .tabsContainer .tabsPanel .lines {
+    position: absolute;
+    left: 95px;
+    width: 80%;
+    height: 12px;
+    top: 340px;
+  }
+
+  .taste {
+    margin-top: 8%;
+    text-align: center;
+    position: relative;
+  }
+  .taste .tas {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: -300px;
+  }
+  .taste h2 {
+    font-family: bold;
+    font-size: 35px;
+    padding-bottom: 60px;
+  }
+
+  .news {
+    position: relative;
+    margin-top: 8%;
+  }
+  .news .bg {
+    position: absolute;
+    left: 550px;
+    height: 95vh;
+    width: 59%;
+  }
+  .news .new {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+  }
+  .news .new .path1 {
+    width: 30%;
+    position: absolute;
+    top: -140px;
+    left: 990px;
+  }
+  .news .new h2 {
+    margin-left: 18%;
+    margin-right: 50%;
+    margin-top: 5%;
+    font-family: bold;
+    width: 100%;
+    font-size: 35px;
+    line-height: 50px;
+  }
+  .news .slick {
+    position: relative;
+    top: 0px;
+    padding-top: 250px;
+  }
+  .news .slick .new1 {
+    width: 100%;
+    height: 320px;
+  }
+  .news .slick h4 {
+    position: absolute;
+    left: 110px;
+    color: white;
+    top: 500px;
+    font-family: regular;
+    font-size: 35px;
+  }
+  .news .arrow {
+    position: absolute;
+    top: 65%;
+    left: 30px;
+  }
+  .news .arrow1 {
+    position: absolute;
+    top: 65%;
+    left: 95%;
+  }
+
+  .footer {
+    height: 80vh;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    position: relative;
+  }
+  .footer .logo1 {
+    margin-top: 250px;
+    width: 100%;
+  }
+  .footer .pexels {
+    margin-top: -5%;
+    height: 70vh;
+    display: block;
+  }
+  .footer .link {
+    margin-top: 30%;
+    text-align: start;
+  }
+  .footer .link .lin {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 40px;
+  }
+  .footer .link .text1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 23px;
+    color: white;
+    padding-top: 15px;
+  }
+  .footer .link .text1 a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+  }
+}/*# sourceMappingURL=style.css.map */

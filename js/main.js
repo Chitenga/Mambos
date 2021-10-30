@@ -35,7 +35,7 @@ $(function() {
             {
               breakpoint: 768,
               settings: {
-                slidesToShow: 2,
+                slidesToShow:2,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false,
@@ -55,23 +55,40 @@ $(function() {
       
 });
 
+var tabButton=document.querySelectorAll(".bt")
+var tabPanel=document.querySelectorAll(".tabsPanel")
+
+function showPanels(panelIndex,colorCode) {
+    tabButton.forEach(function(node){
+        node.style.backgroundColor="";
+        node.style.color="";
+    });
+     tabPanel[panelIndex].style.backgroundColor=colorCode;
+     tabPanel[panelIndex].style.color="white";
+     tabPanel.forEach(function(node){
+        node.style.display="none";
+    });
+    tabPanel [panelIndex].style.display="block";
+    tabPanel [panelIndex].style.backgroundColor=colorCode;
+}
+showPanels(0,'rgb(255, 255, 255)');
+
 $(function() {
   $(".slide").slick({
     dots: false,
     infinite: true,
     slidesToShow: 2,
-    arrows:false,
+    arrows:true,
     nextArrow:'#next1',
     prevArrow:'#next',
     autoplay:true,
     speed:300,
     slidesToScroll: 1,
-  });
       responsive: [
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               slidesToScroll: 1,
               infinite: true,
               dots: false,
@@ -87,7 +104,7 @@ $(function() {
             },
           },
         ]
-    
+      });
 });
 
 

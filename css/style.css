@@ -202,6 +202,9 @@ header .active {
 .banner .spoon {
   display: none;
 }
+.banner .aa {
+  display: none;
+}
 
 .about h2 {
   font-family: bold;
@@ -293,8 +296,8 @@ header .active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
   width: 25%;
-  height: 100%;
   border: none;
   outline: none;
   cursor: pointer;
@@ -305,6 +308,9 @@ header .active {
   width: 75%;
   margin-left: 5%;
   outline: none;
+}
+.services .tabContainer .buttonContainer .btn img:hover {
+  width: 76%;
 }
 .services .tabContainer .buttonContainer .btn #v {
   width: 20%;
@@ -333,6 +339,9 @@ header .active {
   width: 10%;
   height: 2px;
 }
+.services .tabContainer .tabPanel .text .c {
+  color: gray;
+}
 
 .m {
   position: relative;
@@ -340,8 +349,10 @@ header .active {
 }
 .m .men {
   display: flex !important;
-  background-color: #eca510;
+  background-color: #FE7A15;
   border-radius: 15px;
+  width: 120% !important;
+  margin-left: 0%;
 }
 .m .men .text {
   font-family: regular;
@@ -349,12 +360,13 @@ header .active {
   margin-top: 5%;
 }
 .m .men .text h4 {
-  font-size: 20px;
+  font-size: 14px;
+  color: white;
 }
 .m .men .text p {
-  font-size: 18px;
-  margin-right: 10px;
-  padding-top: 25px;
+  font-size: 13px;
+  margin-right: 0px;
+  padding-top: 10px;
   line-height: 30px;
 }
 .m .men .img {
@@ -364,13 +376,220 @@ header .active {
 }
 .m .men .img img {
   border-radius: 100px;
+  width: 60%;
+  height: 40%;
+}
+.m .men a {
+  color: white;
+  font-size: 13px;
+}
+.m #mm {
+  background-color: #E7272D;
+  height: 25%;
+}
+.m #nn {
+  background: #000000;
+}
+.m #nn img {
   width: 70%;
-  height: 70%;
+}
+.m #nn p {
+  color: #FE7A15;
+  width: 100%;
 }
 
 .testimony {
-  background-image: url(../imgs/tale.png);
+  display: none;
+  background-image: url(../imgs/Taku.png);
   height: 100vh;
+  background-repeat: no-repeat;
+}
+.testimony .tabsContainer {
+  position: absolute;
+  left: 250px;
+  background-color: white;
+  top: 180px;
+  width: 65%;
+  height: 410px;
+}
+.testimony .tabsContainer .buttonsContainer {
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.testimony .tabsContainer .buttonsContainer .bt {
+  width: 15%;
+  height: 0%;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 18px;
+  background-color: white;
+}
+.testimony .tabsContainer .buttonsContainer .bt img {
+  width: 60%;
+  position: relative;
+  top: -50px;
+}
+.testimony .tabsContainer .buttonsContainer .bt img:hover {
+  width: 65%;
+  background-color: peachpuff;
+  border-radius: 40px;
+  background-color: white;
+}
+.testimony .tabsContainer .tabsPanel {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding-top: 25px;
+  box-sizing: border-box;
+  display: none;
+}
+.testimony .tabsContainer .tabsPanel img {
+  padding-bottom: 10px;
+}
+.testimony .tabsContainer .tabsPanel p {
+  font-family: regular;
+  font-size: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 30px;
+  color: gray;
+}
+.testimony .tabsContainer .tabsPanel .tt {
+  position: absolute;
+  left: 670px;
+  margin-top: 3%;
+}
+.testimony .tabsContainer .tabsPanel .tt .panel {
+  margin: 0;
+  margin-left: -30%;
+}
+.testimony .tabsContainer .tabsPanel .tt h4 {
+  font-family: regular;
+  color: #000;
+  font-size: 20px;
+}
+.testimony .tabsContainer .tabsPanel .lines {
+  position: absolute;
+  left: 95px;
+  width: 80%;
+  height: 12px;
+  top: 340px;
+}
+
+.news {
+  position: relative;
+  margin-top: 8%;
+}
+.news .bg {
+  position: absolute;
+  left: 0px;
+  height: 100vh;
+  width: 100%;
+}
+.news .new {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+.news .new .path1 {
+  width: 30%;
+  position: absolute;
+  top: -140px;
+  left: 990px;
+  display: none;
+}
+.news .new h2 {
+  margin-left: 0%;
+  margin-right: 0%;
+  text-align: center;
+  margin-top: 5%;
+  color: black;
+  font-family: bold;
+  width: 100%;
+  font-size: 25px;
+  line-height: 50px;
+}
+.news .slick {
+  position: relative;
+  top: 0px;
+  padding-top: 180px;
+  left: 0px;
+}
+.news .slick .new1 {
+  width: 100%;
+  height: 320px;
+}
+.news .slick h4 {
+  position: absolute;
+  left: 50px;
+  color: white;
+  top: 450px;
+  font-family: regular;
+  font-size: 20px;
+}
+.news .arrow {
+  position: absolute;
+  top: 65%;
+  left: 30px;
+}
+.news .arrow1 {
+  position: absolute;
+  top: 65%;
+  left: 95%;
+}
+
+.footer {
+  background-image: url(../imgs/Group.png);
+  height: 80vh;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  position: relative;
+}
+.footer .logo1 {
+  margin-top: 110px;
+  margin-left: 25%;
+  width: 45%;
+}
+.footer .pexels {
+  margin-top: 15%;
+  height: 70vh;
+  display: none;
+}
+.footer .link {
+  margin-top: 30%;
+  text-align: start;
+}
+.footer .link .lin {
+  margin-top: -10%;
+  display: flex;
+  justify-content: space-between;
+  font-family: regular;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+}
+.footer .link .text1 {
+  display: flex;
+  justify-content: space-between;
+  font-family: regular;
+  font-size: 14px;
+  color: white;
+  padding-top: 15px;
+}
+.footer .link .text1 a {
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 @media (min-width: 375px) {
@@ -592,8 +811,109 @@ header .active {
     font-family: bold;
   }
 
+  .testimony {
+    display: block;
+    position: relative;
+  }
+  .testimony .pic {
+    display: flex;
+    justify-content: space-between;
+  }
+  .testimony .pic .red {
+    width: 25%;
+    margin-top: -12%;
+  }
+  .testimony .pic .red1 {
+    transform: rotate(80deg);
+    margin-top: 3%;
+  }
+  .testimony h2 {
+    text-align: center;
+    font-family: bold;
+    font-size: 30px;
+    margin-top: -15%;
+  }
+  .testimony .tabsContainer {
+    position: absolute;
+    left: 150px;
+    background-color: white;
+    top: 200px;
+    width: 65%;
+    height: 410px;
+  }
+  .testimony .tabsContainer .buttonsContainer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt {
+    width: 15%;
+    height: 0%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img {
+    width: 60%;
+    position: relative;
+    top: -50px;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img:hover {
+    width: 65%;
+    background-color: peachpuff;
+    border-radius: 40px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .tabsPanel {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: none;
+  }
+  .testimony .tabsContainer .tabsPanel img {
+    padding-bottom: 10px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-family: regular;
+    font-size: 14px;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 25px;
+    color: gray;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    position: absolute;
+    left: 340px;
+    margin-top: 5%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin: 0;
+    margin-left: -30%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt h4 {
+    font-family: regular;
+    color: #000;
+    font-size: 16px;
+  }
+  .testimony .tabsContainer .tabsPanel .lines {
+    position: absolute;
+    left: 60px;
+    width: 80%;
+    height: 12px;
+    top: 340px;
+  }
+
   .taste {
-    margin-top: 8%;
+    margin-top: -15%;
     text-align: center;
     position: relative;
     display: block;
@@ -602,7 +922,7 @@ header .active {
     float: left;
     position: absolute;
     left: 5px;
-    top: -180px;
+    top: -260px;
     width: 20%;
   }
   .taste h2 {
@@ -612,6 +932,110 @@ header .active {
   }
   .taste img {
     width: 100%;
+  }
+
+  .news {
+    position: relative;
+    margin-top: 8%;
+  }
+  .news .bg {
+    position: absolute;
+    left: 300px;
+    height: 95vh;
+    width: 61%;
+  }
+  .news .new {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+  }
+  .news .new .path1 {
+    width: 30%;
+    position: absolute;
+    top: -75px;
+    left: 550px;
+    display: block;
+  }
+  .news .new h2 {
+    margin-left: 15%;
+    margin-right: 40%;
+    margin-top: 5%;
+    font-family: bold;
+    width: 100%;
+    font-size: 25px;
+    text-align: start;
+    line-height: 50px;
+  }
+  .news .slick {
+    position: relative;
+    top: 0px;
+    padding-top: 250px;
+  }
+  .news .slick .new1 {
+    width: 100%;
+    height: 320px;
+  }
+  .news .slick h4 {
+    position: absolute;
+    left: 40px;
+    color: white;
+    top: 500px;
+    font-family: regular;
+    font-size: 25px;
+  }
+  .news .arrow {
+    position: absolute;
+    top: 65%;
+    left: 30px;
+  }
+  .news .arrow1 {
+    position: absolute;
+    top: 65%;
+    left: 95%;
+  }
+
+  .footer {
+    background-image: url(../imgs/Group.png);
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: 10%;
+    position: relative;
+  }
+  .footer .logo1 {
+    margin-top: 230px;
+    width: 100%;
+  }
+  .footer .pexels {
+    margin-top: -20%;
+    height: 45vh;
+    display: block;
+    margin-left: -60%;
+  }
+  .footer .link {
+    margin-top: 40%;
+    text-align: start;
+  }
+  .footer .link .lin {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 40px;
+  }
+  .footer .link .text1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: regular;
+    font-size: 18px;
+    color: white;
+    padding-top: 15px;
+  }
+  .footer .link .text1 a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {
@@ -705,12 +1129,122 @@ header .active {
     line-height: 30px;
   }
 
+  .m {
+    position: relative;
+    margin-top: 22%;
+  }
+  .m .men {
+    display: flex !important;
+    background-color: #FE7A15;
+    border-radius: 15px;
+    width: 110% !important;
+    margin-left: 0;
+  }
+  .m .men .text {
+    font-family: regular;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .m .men .text h4 {
+    font-size: 20px;
+    color: white;
+  }
+  .m .men .text p {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-top: 25px;
+    line-height: 30px;
+    color: black;
+  }
+  .m .men .text a {
+    font-size: 25px;
+    color: white;
+    margin-left: -5%;
+  }
+  .m .men .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .m .men .img img {
+    border-radius: 100px;
+    width: 100%;
+    height: 70%;
+  }
+  .m #mm {
+    background-color: #E7272D;
+  }
+  .m #nn {
+    background: #000000;
+  }
+  .m #nn img {
+    width: 100%;
+  }
+  .m #nn p {
+    color: #FE7A15;
+  }
+
   .taste .tas {
     top: -230px;
   }
   .taste h2 {
     font-size: 35px;
     padding-bottom: 60px;
+  }
+
+  .testimony {
+    margin-top: 15%;
+  }
+  .testimony h2 {
+    margin-top: -13%;
+  }
+  .testimony .tabsContainer {
+    left: 200px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-size: 20px;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    left: 460px;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin-left: -8%;
+  }
+
+  .taste {
+    margin-top: -35%;
+  }
+  .taste .tas {
+    top: -390px;
+  }
+
+  .news {
+    margin-top: 15%;
+  }
+  .news .bg {
+    left: 410px;
+  }
+  .news .new .path1 {
+    left: 760px;
+    top: -100px;
+  }
+  .news .new h2 {
+    margin-right: 45%;
+    font-size: 30px;
+  }
+
+  .footer {
+    height: 43vh;
+  }
+  .footer .pexels {
+    height: 40vh;
+    margin-left: -35%;
+  }
+  .footer .link .lin {
+    font-size: 30px;
+  }
+  .footer .link .text1 {
+    font-size: 25px;
   }
 }
 @media (min-width: 1200px) {
@@ -775,6 +1309,20 @@ header .active {
     width: 25%;
     left: -50px;
     top: 500px;
+  }
+  .banner .aa {
+    position: absolute;
+    left: 950px;
+    top: 560px;
+    display: flex;
+    display: block;
+  }
+  .banner .aa .aaa {
+    margin-left: 40%;
+    position: absolute;
+  }
+  .banner .aa .aaaa {
+    margin-left: -20%;
   }
 
   .about .mambo {
@@ -916,8 +1464,10 @@ header .active {
   }
   .m .men {
     display: flex !important;
-    background-color: #eca510;
+    background-color: #FE7A15;
     border-radius: 15px;
+    width: 100% !important;
+    margin-left: 0;
   }
   .m .men .text {
     font-family: regular;
@@ -926,12 +1476,19 @@ header .active {
   }
   .m .men .text h4 {
     font-size: 20px;
+    color: white;
   }
   .m .men .text p {
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 10px;
     padding-top: 25px;
     line-height: 30px;
+    color: black;
+  }
+  .m .men .text a {
+    font-size: 25px;
+    color: white;
+    margin-left: -5%;
   }
   .m .men .img {
     display: flex;
@@ -940,8 +1497,20 @@ header .active {
   }
   .m .men .img img {
     border-radius: 100px;
-    width: 70%;
+    width: 100%;
     height: 70%;
+  }
+  .m #mm {
+    background-color: #E7272D;
+  }
+  .m #nn {
+    background: #000000;
+  }
+  .m #nn img {
+    width: 100%;
+  }
+  .m #nn p {
+    color: #FE7A15;
   }
 
   .testimony {
@@ -964,35 +1533,85 @@ header .active {
     font-family: bold;
     font-size: 30px;
     position: absolute;
-    top: 100px;
+    top: 300px;
   }
-  .testimony .tabContainer {
+  .testimony .tabsContainer {
+    position: absolute;
+    left: 250px;
+    background-color: white;
+    top: 200px;
+    width: 65%;
+    height: 410px;
+  }
+  .testimony .tabsContainer .buttonsContainer {
+    height: 15%;
+    display: flex;
+    justify-content: center;
     background-color: white;
   }
-  .testimony .tabContainer .tabPanel {
+  .testimony .tabsContainer .buttonsContainer .bt {
+    width: 15%;
+    height: 0%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 18px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img {
+    width: 60%;
+    position: relative;
+    top: -50px;
+  }
+  .testimony .tabsContainer .buttonsContainer .bt img:hover {
+    width: 65%;
+    background-color: peachpuff;
+    border-radius: 40px;
+    background-color: white;
+  }
+  .testimony .tabsContainer .tabsPanel {
+    position: relative;
+    height: 100%;
+    background-color: white;
+    color: white;
     text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    display: none;
   }
-  .testimony .tabContainer .tabPanel p {
-    padding-left: 260px;
-    padding-right: 260px;
+  .testimony .tabsContainer .tabsPanel img {
+    padding-bottom: 10px;
+  }
+  .testimony .tabsContainer .tabsPanel p {
+    font-family: regular;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
     line-height: 30px;
-    font-family: regular;
-    font-size: 20px;
-    margin-top: 5%;
-  }
-  .testimony .tabContainer .tabPanel .path {
-    margin-top: 5%;
-    margin-left: 45%;
-  }
-  .testimony .tabContainer .tabPanel .path b {
-    font-family: bold;
-    font-size: 20px;
-  }
-  .testimony .tabContainer .tabPanel .path .pp {
-    font-family: regular;
     color: gray;
-    margin-top: 1%;
-    margin-left: -6%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt {
+    position: absolute;
+    left: 670px;
+    margin-top: 3%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt .panel {
+    margin: 0;
+    margin-left: -30%;
+  }
+  .testimony .tabsContainer .tabsPanel .tt h4 {
+    font-family: regular;
+    color: #000;
+    font-size: 20px;
+  }
+  .testimony .tabsContainer .tabsPanel .lines {
+    position: absolute;
+    left: 95px;
+    width: 80%;
+    height: 12px;
+    top: 340px;
   }
 
   .taste {
@@ -1020,6 +1639,7 @@ header .active {
     position: absolute;
     left: 550px;
     height: 95vh;
+    width: 59%;
   }
   .news .new {
     display: flex;
@@ -1034,7 +1654,7 @@ header .active {
     left: 990px;
   }
   .news .new h2 {
-    margin-left: 15%;
+    margin-left: 18%;
     margin-right: 50%;
     margin-top: 5%;
     font-family: bold;
@@ -1082,8 +1702,9 @@ header .active {
     width: 100%;
   }
   .footer .pexels {
-    margin-top: 15%;
+    margin-top: -5%;
     height: 70vh;
+    display: block;
   }
   .footer .link {
     margin-top: 30%;
